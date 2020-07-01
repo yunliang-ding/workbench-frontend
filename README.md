@@ -1,2 +1,23 @@
-# workbench-frontend
-代码工作台前端服务
+# workbench-backend
+编辑器客户端生产代码
+# 下载代码
+git clone https://github.com/yunliang-ding/workbench-frontend.git 
+# 进入项目根目录依次执行
+# 安装客户端依赖
+```
+cnpm install
+```
+# 安装全局pm2
+cnpm install -g pm2
+# 启动服务
+pm2 startOrReload pm2.json
+# 默认前端端口80
+# git推送功能 
+需要配置下ssh
+```
+1:查看 .ssh
+ls -al ~/.ssh
+2:生成/设置SSH Key 生成d_rsa和id_rsa.pub
+ssh-keygen -t rsa -C "your_email@example.com"
+3:将~/.ssh/id_rsa.pub内容 添加到GitLab/github中
+```
